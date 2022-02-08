@@ -1,0 +1,16 @@
+div {
+    display: none;
+}
+
+#toggle-div:checked ~ div {
+    display: block;
+}
+
+body {
+    background-color: rgb(35, 156, 35);
+    text-align: center;
+}
+
+button {
+    background-color: rgb(241, 25, 25);
+}

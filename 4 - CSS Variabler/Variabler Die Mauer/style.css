@@ -1,0 +1,161 @@
+* {
+    list-style-type: none;
+}
+
+:root {
+    --hue: 90;
+    --saturation: 0%;
+    --lightness: 0%;
+
+    --darkgray: hsl(var(--hue), 4%, 34%);
+    --lightgray: hsl(var(--hue), 0%, 80%);
+    --primary: hsl(var(--hue), 25%, 26%);
+    --white: hsl(var(--hue), var(--saturation), 90%);
+}
+
+body {
+    width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "header header"
+    "top top"
+    "side main"
+    "footer footer";
+    font-family: 'segoe UI', Tahoma, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.side ul {
+    background-color: hsl(
+        calc(var(--hue) + 180),
+        calc(var(--saturation) + 20%),
+        calc(var(--lightness) + 50%)
+    )
+}
+
+header {
+    height: 100px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    grid-area: header;
+}
+.top li::after {
+    content: "|";
+    display: inline-block;
+}
+
+nav li:last-child::after {
+    display: none;
+}
+
+.side li:last-child a {
+    border-bottom: none;
+}
+
+.top a::before {
+    content: "‣ ";
+    font-size: large;
+    color: var(--primary);
+}
+
+.top {
+    grid-area: top;
+}
+
+.top a {
+    padding-right: 35px;
+    padding-bottom: 9px;
+    padding-top: 9px;
+    padding-left: 33px;
+}
+
+.side a {
+    border-bottom: solid var(--white) 1px;
+    padding-right: 35px;
+    padding-bottom: 1px;
+    padding-top: 5px;
+    padding-left: 7px;
+    display: block;
+}
+
+main {
+    grid-area: main;
+    margin-left: 40px;
+    display: flex;
+    gap: 5rem;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+}
+
+.side {
+    display: flex;
+    grid-area: side;
+}
+
+header, .side {
+    background-color: var(--lightgray);
+}
+
+.side ul {
+    /* background-color: var(--primary); */
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    height: 310px;
+}
+
+.top, footer {
+    background-color: var(--darkgray);
+    height: 40px;
+    width: auto;
+}
+
+nav li {
+    color: var(--white);
+}
+
+section {
+    width: 45%;
+}
+
+p {
+    color: var(--black);
+}
+
+h2 {
+    color: hsl(86, 4%, 34%);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px var(--black) solid;
+}
+
+article p::first-line {
+    color: var(--primary);
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+a:hover {
+    background-color: var(--lightgray);
+    color: var(--primary);
+}
+
+.top ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px;
+}
+
+.top ul, footer p{
+    margin: 8px;
+}

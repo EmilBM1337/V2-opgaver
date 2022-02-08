@@ -1,0 +1,462 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Mukta', sans-serif;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1024px;
+    margin: auto;
+}
+
+/* Body */
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+header input {
+    background-image: url("Materialer/baseline-search-24px.svg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 12%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+    height: 40px;
+    width: 300px;
+}
+
+/* Main */
+/* Din vej gennem norden */
+
+.din-vej img:nth-child(1) {
+    width: 100%;
+}
+
+.din-vej p:nth-child(2) {
+    text-align: center;
+    color: white;
+    transform: translate(0%, -345%);
+    font-size: 100px;
+}
+
+.din-vej p:nth-child(3) {
+    text-align: center;
+    color: white;
+    transform: translate(0%, -1100%);
+    font-size: 33px;
+}
+
+.din-vej p:nth-child(4) {
+    text-align: center;
+    color: white;
+    transform: translate(0%, -1150%);
+    font-size: 30px;
+}
+
+.din-vej img:nth-child(5) {
+    position: absolute;
+    transform: translate(4500%, -750%);
+    border-radius: 50%;
+    background-color: white;
+    width: 40px;
+    z-index: 1;
+}
+
+.din-vej a:link {
+    color: white;
+    background-color: #7bc144;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 60px;
+    padding-left: 60px;
+    border-radius: 3%;
+}
+
+.din-vej a:visited {
+    color: white;
+}
+
+/* Tjenester */
+
+.tjenester h1 {
+    text-align: center;
+    font-size: 50px;
+    transform: translate(0%, -200%);
+}
+
+.tjenester img:nth-child(2) {
+    transform: translate(180%, -50%);
+}
+
+.tjenester h4:nth-child(3) {
+    font-size: 25px;
+    transform: translate(27%, -300%);
+}
+
+.tjenester img:nth-child(4) {
+    transform: translate(340%, -180%);
+}
+
+.tjenester h4:nth-child(5) {
+    font-size: 25px;
+    transform: translate(43%, -1000%);
+}
+
+.tjenester img:nth-child(6) {
+    transform: translate(490%, -295%);
+}
+
+.tjenester h4:nth-child(7) {
+    font-size: 25px;
+    transform: translate(66%, -1705%);
+}
+
+.tjenester img:nth-child(8) {
+    transform: translate(180%, -280%);
+}
+
+.tjenester h4:nth-child(9) {
+    font-size: 25px;
+    transform: translate(28%, -1600%);
+}
+
+.tjenester img:nth-child(10) {
+    transform: translate(340%, -400%);
+}
+
+.tjenester h4:nth-child(11) {
+    font-size: 25px;
+    transform: translate(47%, -2305%);
+}
+
+.tjenester img:nth-child(12) {
+    transform: translate(490%, -520%);
+}
+
+.tjenester h4:nth-child(13) {
+    font-size: 25px;
+    transform: translate(62%, -3013%);
+}
+
+.tjenester img:nth-child(14) {
+    position: absolute;
+    transform: translate(4500%, -2800%);
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    z-index: 1;
+}
+
+/* Om Bring */
+
+.om-bring {
+    position: relative;
+    transform: translate(0%, -100%);
+    background-color: #edcb35;
+    height: 1100px;
+}
+
+.om-bring h1 {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.om-bring .smiley {
+    display: block;
+    margin: auto;
+}
+
+.om-bring .f-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 80px;
+    justify-content: space-between;
+}
+
+.om-bring .f-container p {
+    width: 405px;
+}
+
+.om-bring img:nth-last-child(1) {
+    position: absolute;
+    transform: translate(4500%, 630%);
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    z-index: 1;
+}
+
+.om-bring a:link {
+    color: white;
+    background-color: #333333;
+    position: absolute;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 60px;
+    padding-left: 60px;
+    border-radius: 3%;
+    transform: translate(460%);
+}
+
+.om-bring a:visited {
+    color: white;
+}
+
+/* E-handel */
+
+.e-handel {
+    position: relative;
+    transform: translate(0%, -100%);
+    background-color: #7bc144;
+    height: 1100px;
+    z-index: -1;
+}
+
+.e-handel h1 {
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    padding-top: 10%;
+}
+
+.e-handel .bag {
+    display: block;
+    margin: auto;
+    padding-top: 5%;
+}
+
+.e-handel p {
+    text-align: center;
+    color: white;
+    font-size: 166%;
+    margin-top: 5%;
+}
+
+.e-handel img:nth-last-child(1) {
+    position: absolute;
+    transform: translate(3400%, 1030%);
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    z-index: 1;
+}
+
+.e-handel a:link {
+    color: white;
+    background-color: #333333;
+    position: absolute;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 60px;
+    padding-left: 60px;
+    border-radius: 3%;
+    transform: translate(-45%);
+}
+
+.e-handel a:visited {
+    color: white;
+}
+
+/* Modtagerservice */
+
+.modtagerservice {
+    position: relative;
+    transform: translate(0%, -100%);
+    height: 1100px;
+}
+
+.modtagerservice h1 {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.modtagerservice .truck {
+    display: block;
+    margin: auto;
+    padding-top: 5%;
+}
+
+.modtagerservice p {
+    text-align: center;
+    width: 90%;
+    font-size: 166%;
+    margin-top: 5%;
+}
+
+.modtagerservice img:nth-last-child(1) {
+    position: absolute;
+    transform: translate(3400%, 1220%);
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    z-index: 1;
+}
+
+.modtagerservice a:link {
+    color: white;
+    background-color: #333333;
+    position: absolute;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 60px;
+    padding-left: 60px;
+    border-radius: 3%;
+    transform: translate(-45%);
+}
+
+.modtagerservice a:visited {
+    color: white;
+}
+
+/* Kundeservice */
+
+.kundeservice {
+    position: relative;
+    background-color: #edcb35;
+    transform: translate(0%, -100%);
+    height: 1100px;
+    z-index: -1;
+}
+
+.kundeservice h1 {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.kundeservice .map {
+    position: absolute;
+    transform: translate(650px, -350px);
+    width: 25%;
+}
+
+.kundeservice p {
+    width: 43%;
+    font-size: 110%;
+    margin-top: 5%;
+}
+
+.kundeservice ul {
+    padding-top: 3%;
+    padding-left: 4%;
+}
+
+.kundeservice a:link {
+    color: white;
+    background-color: #333333;
+    position: absolute;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 60px;
+    padding-left: 60px;
+    border-radius: 3%;
+    transform: translate(200%, 700%);
+}
+
+.kundeservice a:visited {
+    color: white;
+}
+
+.kundeservice img:nth-last-child(1) {
+    position: absolute;
+    transform: translate(3400%, 1420%);
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    z-index: 1;
+}
+
+/* Vil du være en af os? */
+
+.en-af-os {
+    position: relative;
+    transform: translate(0%, -100%);
+    height: 1100px;
+}
+
+.en-af-os .car {
+    position: absolute;
+    width: 100%;
+    left: 0%;
+}
+
+.en-af-os h1 {
+    position: relative;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 30%;
+    font-size: 500%;
+}
+
+.en-af-os img:nth-last-child(1) {
+    position: absolute;
+    transform: translate(3400%, 950%);
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+}
+
+.en-af-os a:link {
+    color: white;
+    background-color: #7bc144;
+    font-size: 200%;
+    position: absolute;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 60px;
+    padding-left: 60px;
+    border-radius: 3%;
+    transform: translate(190%, 100%);
+}
+
+.en-af-os a:visited {
+    color: white;
+}
+
+/* Footer */
+
+footer {
+    transform: translate(0%, -159%);
+    background-color: #333333;
+}
+
+footer h1 {
+    text-align: center;
+    font-size: 300%;
+    padding-top: 5%;
+}
+
+footer h1, footer p {
+    color: white;
+}
+
+footer h2 {
+    color: #7bc144;
+}
+
+footer img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

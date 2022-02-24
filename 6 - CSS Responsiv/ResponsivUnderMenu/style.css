@@ -48,8 +48,6 @@ nav > ul {
     position: relative;
     right: 0;
     top: 40px;
-    background-color: blueviolet;
-    /* margin-bottom: 40px; */
 }
 
 .submenu-btn {
@@ -65,7 +63,6 @@ nav > ul {
 
 nav .submenu-btn:checked ~ ul {
     display: block;
-    background-color: aqua;
 }
 
 nav .submenu-btn ~ ul {

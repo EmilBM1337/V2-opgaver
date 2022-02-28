@@ -17,7 +17,7 @@ main section article img {
     width: 100%;
 }
 
-h1 {
+main div {
     height: 100px;
     background-color: darkslategray;
     color: whitesmoke;
@@ -165,9 +165,17 @@ main>span img {
 
 /* Særlig styling til desktop - minimum viewport bredde på 768 pixels */
 @media only screen and (min-width: 768px) {
+
     h1 {
         font-size: 4rem;
         letter-spacing: 1rem;
+        position: relative;
+        animation: title 2s linear;
+    }
+
+    @keyframes title {
+        0% {transform: translateX(68vw);}
+        50% {transform: translateX(34vw) rotateY(180deg);}
     }
 
     /* Checkbox og hamburger menu ikon vises ikke på desktop */
@@ -179,7 +187,12 @@ main>span img {
         display: flex;
         justify-content: space-evenly;
         top: 0;
+        z-index: 1;
     }
+
+    /* nav ul li ul {
+        transition: all .5s ease;
+    } */
 
     nav ul li {
         padding: 0;
@@ -192,6 +205,10 @@ main>span img {
 
     nav ul li:hover h2 {
         background-color: hsla(0, 0%, 20%);
+    }
+
+    nav ul li:hover ul {
+        transform: translateY(0);
     }
 
     nav ul li a {

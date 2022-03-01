@@ -8,49 +8,122 @@
 
 /* Header */
 
-.hDiv {
+header div {
     color: white;
     background-color: #161616;
 }
 
-.hDiv h1 {
+header div h1 {
     font-family: 'Nunito Sans', sans-serif;
     text-transform: uppercase;
     padding-left: 100px;
     font-size: 70px;
 }
 
-.hDiv div {
+header div div {
     color: white;
     display: flex;
     justify-content: flex-end;
 }
 
-.hDiv p {
+header div p {
     font-size: 25px;
     padding-right: 50px;
     padding-bottom: 30px;
 }
 
 /* Main */
-/* Section træhuse */
 
-main .træhuse {
-    background-color: #e1e1e1;
+/* Section livstil */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 20%;
 }
 
-main .træhuse div {
+.livstil h2 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.livstil p {
+    color: #6e6e6e;
+}
+
+/* Section træhuse */
+
+.træhuse {
+    background-color: #e1e1e1;
+    display: flex;
+    width: 95%;
+    margin: 0%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 5%;
+}
+
+.træhuse div img {
+    width: 100%;
+    margin: 0;
+}
+
+.træhuse div {
     background-color: white;
+    padding-bottom: 5%;
+}
+
+.træhuse p {
+    color: #6e6e6e;
+}
+
+.træhuse .small {
+    line-height: 3.0;
 }
 
 /* Section udvalg*/
 
-.udvalg p {
+.udvalg {
+    background-image: url("img/5642_Hejrelunden_\(20\).jpg");
+    background-position: center;
+    height: 800px;
+    width: 100%;
+    margin: 0%;
+}
 
+.udvalg p {
+    text-align: center;
+    color: white;
+    transform: translate(25%, 700%);
+    width: 60%;
+    font-size: 40px;
+    border: 3px solid white;
+    border-radius: 50px;
 }
 
 /* Footer */
 
 footer {
     background-color: #2a2a2a;
+    display: flex;
+    height: 500px;
+}
+
+footer div {
+    padding-top: 200px;
+}
+
+footer div p {
+    color: #6e6e6e;
+    font-size: 30px;
+}
+
+footer div svg {
+    width: 50px;
+    fill: #6e6e6e;
+}
+
+footer div:last-of-type {
+    padding-top: 60px;
 }

@@ -11,3 +11,13 @@ header {
 ul li {
     display: inline;
 }
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main article {
+    flex-grow: 1;
+    flex-basis: 30%;
+}

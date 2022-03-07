@@ -166,6 +166,10 @@ main>span img {
 /* Særlig styling til desktop - minimum viewport bredde på 768 pixels */
 @media only screen and (min-width: 768px) {
 
+    body {
+        overflow: hidden;
+    }
+
     h1 {
         font-size: 4rem;
         letter-spacing: 1rem;
@@ -190,10 +194,6 @@ main>span img {
         z-index: 1;
     }
 
-    /* nav ul li ul {
-        transition: all .5s ease;
-    } */
-
     nav ul li {
         padding: 0;
         height: 50px;
@@ -205,10 +205,6 @@ main>span img {
 
     nav ul li:hover h2 {
         background-color: hsla(0, 0%, 20%);
-    }
-
-    nav ul li:hover ul {
-        transform: translateY(0);
     }
 
     nav ul li a {
@@ -229,11 +225,15 @@ main>span img {
         width: 235px;
         font-size: 20px;
         text-align: left;
+        /* opacity: 0;
+        transform: translateY(-200px); */
     }
 
     /* Når brugeren hover over det overliggende menupunkt, skal dropdown menuen vises */
     nav ul li:hover ul {
         display: block;
+        /* opacity: 1;
+        transform: translateY(0); */
     }
 
     nav ul li:hover a {

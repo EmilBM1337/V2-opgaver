@@ -2,10 +2,192 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
+    list-style-type: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 1000;
 }
 
 /* Header */
 
-header {
+header h1 {
+    font-size: 3em;
+}
+
+header h1::before {
+    content: "Fantasy";
+    color: #FE7D4E;
+}
+
+/* Header nav */
+
+header nav input {
+    height: 40px;
+    z-index: 1;
+    opacity: 0;
+}
+
+header nav img, header nav input {
+    position: absolute;
+    top: 5px;
+    right: 50px;
+    width: 4em;
+    height: 4em;
+}
+
+/* Header nav menuopen */
+
+header nav input ~ .menuopen {
+    display: block;
+}
+
+header nav input:checked ~ .menuopen {
+    display: none;
+}
+
+/* Header nav menuclose */
+
+header nav input ~ .menuclose {
+    display: none;
+}
+
+header nav input:checked ~ .menuclose {
+    display: block;
+}
+
+/* Header nav ul */
+
+header nav input ~ ul {
+    display: none;
+}
+
+header nav input:checked ~ ul {
+    display: block;
+}
+
+header nav ul {
+    text-align: center;
+}
+
+header nav ul a {
+    color: black;
+    font-size: 2em;
+}
+
+header nav ul a:last-of-type {
+    color: #fe7d4e;
+    background-color: rgba(254, 125, 78, 0.2);
+    padding: 0.5em;
+    border-radius: 50px;
+}
+
+/* Main */
+
+/* Section Hero */
+
+.hero {
+    background-image: url("img/hero\ image.jpg");
+    background-position: center;
+    height: 50em;
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero p {
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    text-shadow: 1px 1px rgba(0, 0, 0, 1);
+}
+
+/* Section Secondhand */
+
+.secondhand h2 {
+    text-align: center;
+    color: #543d32;
+    font-size: 2em;
+    padding-top: 1em;
+}
+
+.secondhand img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2em;
+}
+
+.secondhand div {
+    text-align: center;
+    padding-bottom: 3em;
+}
+
+.secondhand div a {
+    font-size: 2em;
+    color: #543d32;
+}
+
+.secondhand div img {
+    display: inline;
+    width: 40px;
+}
+
+/* Section Månedens bog */
+
+.månedensbog {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #543d32;
+}
+
+.månedensbog div:first-of-type {
+    padding-bottom: 3em;
+    text-align: center;
+}
+
+.månedensbog div:first-of-type a {
+    font-size: 1em;
+    color: #543d32;
+}
+
+.månedensbog div h2 {
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.månedensbog div:first-of-type img {
+    display: inline;
+    width: 40px;
+}
+
+.månedensbog div:last-of-type {
+    background-color: #FEF2F2;
+}
+
+.månedensbog div a, .månedensbog div p {
+    color: #543d32;
+}
+
+/* Section Bogklub */
+
+.bogklub {
+    background-image: url("img/Cover-Bogklub.jpg");
+}
+
+.bogklub a {
+    color: white;
+}
+
+/* Footer */
+
+footer h2::before {
+    content: "Fantasy";
+    color: #FE7D4E;
+}
+
+/* Desktop Styling */
+
+@media only screen and (min-width: 768px) {
+
 }

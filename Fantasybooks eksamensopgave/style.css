@@ -7,6 +7,10 @@
     font-weight: 1000;
 }
 
+body {
+    background-color: #FFF7F3;
+}
+
 /* Header */
 
 header h1 {
@@ -144,6 +148,7 @@ header nav ul a:last-of-type {
 .månedensbog div:first-of-type {
     padding-bottom: 3em;
     text-align: center;
+    background-color: #FEFDF9;
 }
 
 .månedensbog div:first-of-type a {
@@ -169,21 +174,111 @@ header nav ul a:last-of-type {
     color: #543d32;
 }
 
+.månedensbog div:last-of-type img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2em;
+}
+
+.månedensbog div .gray {
+    color: #707070;
+}
+
+.månedensbog div div:first-of-type {
+    background-color: #FEF2F2;
+}
+
+.månedensbog div div:last-of-type {
+    text-align: center;
+    padding-bottom: 3em;
+}
+
+.månedensbog div:last-of-type p:last-of-type {
+    padding-bottom: 2em;
+}
+
+.månedensbog div:last-of-type {
+    text-align: center;
+}
+
+.månedensbog div:last-of-type a {
+    display: inline-block;
+    color: white;
+    background-color: #fe7d4e;
+    padding: 1em;
+    margin-bottom: 50px;
+    border-radius: 50px;
+}
+
 /* Section Bogklub */
 
 .bogklub {
-    background-image: url("img/Cover-Bogklub.jpg");
+    padding-bottom: 3em;
+}
+
+.bogklub img {
+    position: absolute;
+    width: 100%;
+    height: auto;
 }
 
 .bogklub a {
+    position: relative;
+    display: inline-block;
     color: white;
+    background-color: #fe7d4e;
+    padding: 1em;
+    margin-bottom: 100px;
+    border-radius: 50px;
+    top: 3.7em;
+    left: 3em;
 }
 
 /* Footer */
 
+footer h2 {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
 footer h2::before {
     content: "Fantasy";
     color: #FE7D4E;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+footer div div {
+    padding-bottom: 2em;
+}
+
+footer div div p {
+    font-weight: 500;
+}
+
+footer nav {
+    text-align: center;
+}
+
+footer nav p {
+    padding-bottom: 2em;
+}
+
+footer nav svg {
+    width: 30%;
+    height: auto;
+    fill: #fe7d4e;
+}
+
+footer img {
+    width: 100%;
+    height: auto;
 }
 
 /* Desktop Styling */

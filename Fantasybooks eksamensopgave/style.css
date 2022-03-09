@@ -145,6 +145,17 @@ header nav ul a:last-of-type {
     color: #543d32;
 }
 
+.månedensbog div h2 {
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.månedensbog div a, .månedensbog div p {
+    color: #543d32;
+}
+
+/* Section Månendens bog div 1 */
+
 .månedensbog div:first-of-type {
     padding-bottom: 3em;
     text-align: center;
@@ -156,22 +167,19 @@ header nav ul a:last-of-type {
     color: #543d32;
 }
 
-.månedensbog div h2 {
-    text-align: center;
-    padding-bottom: 2em;
-}
-
 .månedensbog div:first-of-type img {
     display: inline;
     width: 40px;
 }
 
-.månedensbog div:last-of-type {
-    background-color: #FEF2F2;
+/* Section Månendens bog div 2 */
+
+.månedensbog div .gray {
+    color: #707070;
 }
 
-.månedensbog div a, .månedensbog div p {
-    color: #543d32;
+.månedensbog div:last-of-type {
+    background-color: #FEF2F2;
 }
 
 .månedensbog div:last-of-type img {
@@ -179,10 +187,6 @@ header nav ul a:last-of-type {
     margin-left: auto;
     margin-right: auto;
     padding-top: 2em;
-}
-
-.månedensbog div .gray {
-    color: #707070;
 }
 
 .månedensbog div div:first-of-type {
@@ -281,8 +285,109 @@ footer img {
     height: auto;
 }
 
+/* --------------- */
 /* Desktop Styling */
+/* --------------- */
 
 @media only screen and (min-width: 768px) {
+
+.container {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+header input, header img {
+    display: none;
+    opacity: 0;
+}
+
+header nav input ~ ul {
+    display: block;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    font-size: 0.6em;
+}
+
+header nav ul a {
+    margin-right: 2em;
+}
+
+/* Section Hero */
+
+.hero p {
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Section Secondhand */
+
+.secondhand {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 5em;
+}
+
+.secondhand h2 {
+    order: -2;
+}
+
+.secondhand div {
+    order: -1;
+    font-size: 0.8em;
+}
+
+.secondhand h2, .secondhand div {
+    width: 50%;
+}
+
+/* Section Månedens bog */
+
+.månedensbog {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Section Månedens bog div 1 */
+
+.månedensbog div:first-of-type {
+    padding-top: 25%;
+}
+
+.månedensbog div:first-of-type h2 {
+    font-size: 2em;
+}
+
+.månedensbog div:first-of-type p, .månedensbog div:first-of-type a {
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.månedensbog div:first-of-type a {
+    font-size: 1.3em;
+}
+
+/* Section Månedens bog div 2 */
 
 }
